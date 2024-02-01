@@ -1,0 +1,344 @@
+body {
+    background-color: #718096;
+    color: white;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.navbar {
+    width: 50%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbarContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #38444d;
+}
+
+.navbarLogin {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navbarLogin button, .navbarLogin li a{
+    float: right;
+    display: inline-block;
+    color: white;
+    background-color: #38444d;
+    border: none;
+    font-size: medium;
+    text-align: center;
+    padding: 14px 16px 14px;
+    text-decoration: none;
+    min-width: 60px;
+
+}
+
+.navbarLogin button:hover, .navbarLogin li a:hover{
+    background-color: green;
+}
+
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    min-width: 60px;
+}
+
+.navbar li a:hover, .navbarDropdown:hover{
+    background-color: green;
+}
+
+.navbarDropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4b5563;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navbarDropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginForm {
+    border: white 5px solid;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 400px;
+    width: 20%;
+    min-width: 350px;
+    background-color: #27592d;
+}
+
+.loginForm input[type=text], .loginForm input[type=password] {
+    outline: none;
+}
+
+.loginFormContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.loginInputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+}
+
+.loginInputContainer input {
+    width: 100%;
+}
+
+.loginButton {
+    width: 60%;
+    height: 10%;
+    background-color: forestgreen;
+    color: white;
+    font-size: x-large;
+    border: white 2px solid;
+    border-radius: 10px;
+}
+
+.loginButton:hover {
+    box-shadow: 0px 0px 7px 7px forestgreen;
+}
+
+.d-none {
+    display: none;
+}
+
+.createContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.queryVisualizerContainer {
+    border: 5px white solid;
+    width: 50%;
+    margin: 20px 20px 0 0;
+    min-height: 700px;
+    background-color: #ddede1;
+    display: flex;
+    flex-direction: column;
+    color: #27592d;;
+}
+
+.createForm {
+    border: white 5px solid;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 400px;
+    width: 25%;
+    margin: 20px 0 0 50px;
+
+    background-color: #27592d;
+}
+
+.createFormInput {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.createFormInput select {
+    width: 100px;
+    height: 60px;
+}
+
+.productContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.createButtonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.createButton {
+    width: 50%;
+    height: 100%;
+    background-color: forestgreen;
+    color: white;
+    font-size: large;
+    border: white 2px solid;
+    border-radius: 10px;
+}
+
+.createButton:hover {
+    box-shadow: 0px 0px 4px 4px forestgreen;
+}
+
+.productsTableContainer {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.productsTable {
+    width: 80%;
+    background-color: #9ca3af;
+    border: white 5px solid;
+    text-align: left;
+    gap: 10px;
+    font-size: large;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    text-decoration: none;
+    text-align: left;
+    color: white;
+    padding: 10px 0 10px 10px;
+}
+
+.product:hover {
+    background-color: #718096;
+}
+
+.productName {
+    grid-column-start: 0;
+    grid-column-end: 2;
+}
+.productDescription {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+.productTableGrid {
+    color: black;
+    padding: 10px 0 20px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.categoryTable {
+    width: 40%;
+    background-color: #9ca3af;
+    border: white 5px solid;
+    text-align: center;
+    row-gap: 20px;
+    font-size: large;
+}
+
+.editContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.showProductContainer {
+    padding: 10px 0 20px 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    height: 600px;
+    background-color: #27592d;
+    border: white 2px solid;
+    border-radius: 10px;
+}
+
+.showProductPrice {
+    margin-top: 40px;
+}
+
+.showProductButtons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.showProductButtons a, .showProductButtons form button{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: white 2px solid;
+    background-color: forestgreen;
+    border-radius: 10px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+.showProductButtons form {
+    width: 25%;
+    height: 100%;
+}
+
+.showProductButtons a:hover, .showProductButtons form button:hover {
+    box-shadow: 0px 0px 4px 4px forestgreen;
+}
+
+.categoryName {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.categoryNames {
+    text-decoration: none;
+}
+
+.categoryNames div {
+    padding: 10px 0 10px 0;
+    color: white;
+}
+
+.categoryNames div:hover {
+    background-color: #718096;
+}
+
+.showCategoryContainer {
+    padding: 10px 0 20px 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 30%;
+    height: 300px;
+    background-color: #27592d;
+    border: white 2px solid;
+    border-radius: 10px;
+}
